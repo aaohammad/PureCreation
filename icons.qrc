@@ -1,0 +1,46 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icons/change view</file>
+        <file>icons/attribute editor</file>
+        <file>icons/bring to front</file>
+        <file>icons/bspline</file>
+        <file>icons/circle</file>
+        <file>icons/color</file>
+        <file>icons/command</file>
+        <file>icons/crop</file>
+        <file>icons/delete</file>
+        <file>icons/ellipse</file>
+        <file>icons/exit</file>
+        <file>icons/export</file>
+        <file>icons/grid</file>
+        <file>icons/group</file>
+        <file>icons/new</file>
+        <file>icons/open</file>
+        <file>icons/pointer</file>
+        <file>icons/polygon</file>
+        <file>icons/print</file>
+        <file>icons/redo</file>
+        <file>icons/reflect</file>
+        <file>icons/rotate</file>
+        <file>icons/save</file>
+        <file>icons/save as</file>
+        <file>icons/scale</file>
+        <file>icons/select</file>
+        <file>icons/send to back</file>
+        <file>icons/spline</file>
+        <file>icons/square</file>
+        <file>icons/text</file>
+        <file>icons/undo</file>
+        <file>icons/ungroup</file>
+        <file>icons/icon</file>
+        <file>icons/image</file>
+        <file>icons/line</file>
+        <file>icons/move</file>
+        <file>icons/bezier</file>
+        <file>icons/pickcolor.png</file>
+        <file>icons/vertex select mode.png</file>
+        <file>icons/Object Select Mode.png</file>
+        <file>icons/Face Select Mode.png</file>
+        <file>icons/edge select mode.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>869</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Pure Creation</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/new/prefix1/9048.png</normaloff>:/new/prefix1/9048.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>191</width>
+         <height>531</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="twod_drawing_tabPage">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>494</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>2D Drawing</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QToolButton" name="selection_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Select Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Select Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/pointer</normaloff>:/new/prefix1/icons/pointer</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonFollowStyle</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QToolButton" name="moveSelected_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Move Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Move Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/move</normaloff>:/new/prefix1/icons/move</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="scaleSelected_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Scale Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Scale Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/scale</normaloff>:/new/prefix1/icons/scale</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QToolButton" name="rotateSelected_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>Rotate Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Rotate Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/rotate</normaloff>:/new/prefix1/icons/rotate</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextUnderIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QToolButton" name="zoom_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Change View</string>
+             </property>
+             <property name="statusTip">
+              <string>Change View</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/change view</normaloff>:/new/prefix1/icons/change view</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="5">
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QToolButton" name="square_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Square Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Square Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/square</normaloff>:/new/prefix1/icons/square</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QToolButton" name="circle_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Circle Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Circle Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/circle</normaloff>:/new/prefix1/icons/circle</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QToolButton" name="ellipse_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Ellipse Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Ellipse Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/ellipse</normaloff>:/new/prefix1/icons/ellipse</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QToolButton" name="line_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Line Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Line Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/line</normaloff>:/new/prefix1/icons/line</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QToolButton" name="polygon_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Polygon Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Polygon Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/polygon</normaloff>:/new/prefix1/icons/polygon</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QToolButton" name="bezier_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Bezier Curve Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Bezier Curve Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/bezier</normaloff>:/new/prefix1/icons/bezier</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QToolButton" name="spline_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Spline Curve Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Spline Curve Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/spline</normaloff>:/new/prefix1/icons/spline</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QToolButton" name="text_toolButton">
+             <property name="font">
+              <font>
+               <pointsize>6</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>Text Tool</string>
+             </property>
+             <property name="statusTip">
+              <string>Text Tool</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../icons.qrc">
+               <normaloff>:/new/prefix1/icons/text</normaloff>:/new/prefix1/icons/text</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonIconOnly</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3" colspan="2">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0" colspan="5">
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="5">
+            <widget class="ColorWidget" name="colorWidget"/>
+           </item>
+           <item row="6" column="0" colspan="5">
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="scenewidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>869</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Open"/>
+    <addaction name="separator"/>
+    <addaction name="action_Save"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="action_Export"/>
+    <addaction name="separator"/>
+    <addaction name="action_Print"/>
+    <addaction name="actionE_xit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout_me"/>
+    <addaction name="actionAbout_Qt"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionRedo"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionSend_To_Back"/>
+    <addaction name="actionBring_To_Front"/>
+    <addaction name="actionSelect_All"/>
+    <addaction name="actionDelete"/>
+    <addaction name="actionCommand"/>
+    <addaction name="separator"/>
+    <addaction name="actionDraw_Grid"/>
+    <addaction name="actionInsert"/>
+    <addaction name="action_Group"/>
+    <addaction name="action_Ungroup"/>
+    <addaction name="actionCrop"/>
+    <addaction name="attributeEditor"/>
+    <addaction name="separator"/>
+    <addaction name="action_Option"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_New"/>
+   <addaction name="action_Open"/>
+   <addaction name="separator"/>
+   <addaction name="action_Save"/>
+   <addaction name="actionSave_As"/>
+   <addaction name="action_Print"/>
+   <addaction name="separator"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionSend_To_Back"/>
+   <addaction name="actionBring_To_Front"/>
+   <addaction name="action_Group"/>
+   <addaction name="action_Ungroup"/>
+   <addaction name="actionReflection"/>
+   <addaction name="actionSelect_All"/>
+   <addaction name="actionDelete"/>
+   <addaction name="separator"/>
+   <addaction name="actionDraw_Grid"/>
+   <addaction name="separator"/>
+   <addaction name="attributeEditor"/>
+   <addaction name="actionCommand"/>
+   <addaction name="actionInsert"/>
+   <addaction name="action_Export"/>
+   <addaction name="actionCrop"/>
+  </widget>
+  <action name="action_New">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/new</normaloff>:/new/prefix1/icons/new</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/open</normaloff>:/new/prefix1/icons/open</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionRecent_Doc_uments">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/1294938623_My documents.png</normaloff>:/new/prefix1/1294938623_My documents.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recent Doc&amp;uments</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/save</normaloff>:/new/prefix1/icons/save</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/save as</normaloff>:/new/prefix1/icons/save as</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+   <property name="statusTip">
+    <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_Export">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/export</normaloff>:/new/prefix1/icons/export</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Export</string>
+   </property>
+   <property name="statusTip">
+    <string>Export</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="action_Print">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/print</normaloff>:/new/prefix1/icons/print</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Print</string>
+   </property>
+   <property name="statusTip">
+    <string>Print</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionE_xit">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/exit</normaloff>:/new/prefix1/icons/exit</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="statusTip">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_Group">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/group</normaloff>:/new/prefix1/icons/group</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Group</string>
+   </property>
+   <property name="statusTip">
+    <string>Group</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+G</string>
+   </property>
+  </action>
+  <action name="action_Ungroup">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/ungroup</normaloff>:/new/prefix1/icons/ungroup</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Ungroup</string>
+   </property>
+   <property name="statusTip">
+    <string>Ungroup</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+U</string>
+   </property>
+  </action>
+  <action name="attributeEditor">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/attribute editor</normaloff>:/new/prefix1/icons/attribute editor</iconset>
+   </property>
+   <property name="text">
+    <string>Attribute Edittor</string>
+   </property>
+   <property name="statusTip">
+    <string>Attribute Edittor</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/undo</normaloff>:/new/prefix1/icons/undo</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="toolTip">
+    <string>Undo</string>
+   </property>
+   <property name="statusTip">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/redo</normaloff>:/new/prefix1/icons/redo</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="toolTip">
+    <string>Redo</string>
+   </property>
+   <property name="statusTip">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/delete</normaloff>:/new/prefix1/icons/delete</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionCommand">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/command</normaloff>:/new/prefix1/icons/command</iconset>
+   </property>
+   <property name="text">
+    <string>Command</string>
+   </property>
+   <property name="toolTip">
+    <string>Command</string>
+   </property>
+   <property name="statusTip">
+    <string>Command</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+  </action>
+  <action name="actionDraw_Grid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/grid</normaloff>:/new/prefix1/icons/grid</iconset>
+   </property>
+   <property name="text">
+    <string>Draw Grid</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Grid</string>
+   </property>
+   <property name="statusTip">
+    <string>Show Grid</string>
+   </property>
+   <property name="shortcut">
+    <string>G</string>
+   </property>
+  </action>
+  <action name="actionInsert">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/image</normaloff>:/new/prefix1/icons/image</iconset>
+   </property>
+   <property name="text">
+    <string>Insert</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert Image</string>
+   </property>
+   <property name="statusTip">
+    <string>Insert Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/new/prefix1/1301224667_Gnome-Edit-Select-All-64.png</normaloff>:/new/prefix1/1301224667_Gnome-Edit-Select-All-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+   <property name="toolTip">
+    <string>Select All</string>
+   </property>
+   <property name="statusTip">
+    <string>Select All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qt">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="statusTip">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="actionAbout_me">
+   <property name="text">
+    <string>About me!</string>
+   </property>
+   <property name="toolTip">
+    <string>About me!</string>
+   </property>
+   <property name="statusTip">
+    <string>About me!</string>
+   </property>
+  </action>
+  <action name="action_Option">
+   <property name="text">
+    <string>&amp;Option</string>
+   </property>
+   <property name="toolTip">
+    <string>Option</string>
+   </property>
+   <property name="statusTip">
+    <string>Option</string>
+   </property>
+  </action>
+  <action name="actionBring_To_Front">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/bring to front</normaloff>:/new/prefix1/icons/bring to front</iconset>
+   </property>
+   <property name="text">
+    <string>Bring To Front</string>
+   </property>
+   <property name="toolTip">
+    <string>Bring To Front</string>
+   </property>
+   <property name="statusTip">
+    <string>Bring To Front</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F</string>
+   </property>
+  </action>
+  <action name="actionSend_To_Back">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/send to back</normaloff>:/new/prefix1/icons/send to back</iconset>
+   </property>
+   <property name="text">
+    <string>Send To Back</string>
+   </property>
+   <property name="toolTip">
+    <string>Send To Back</string>
+   </property>
+   <property name="statusTip">
+    <string>Send To Back</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+B</string>
+   </property>
+  </action>
+  <action name="actionCrop">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/crop</normaloff>:/new/prefix1/icons/crop</iconset>
+   </property>
+   <property name="text">
+    <string>Crop</string>
+   </property>
+   <property name="toolTip">
+    <string>Crop</string>
+   </property>
+   <property name="statusTip">
+    <string>Crop</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+C</string>
+   </property>
+  </action>
+  <action name="actionReflection">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/new/prefix1/icons/reflect</normaloff>:/new/prefix1/icons/reflect</iconset>
+   </property>
+   <property name="text">
+    <string>Reflection</string>
+   </property>
+   <property name="toolTip">
+    <string>Reflection</string>
+   </property>
+   <property name="statusTip">
+    <string>Reflection</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ColorWidget</class>
+   <extends>QWidget</extends>
+   <header>colorwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
