@@ -1,4 +1,0 @@
-PureCreation
-============
-
-Graphics
