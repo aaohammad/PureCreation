@@ -7,11 +7,11 @@ class Material
 {
 public:
     Material();
-    void setAmbient(float red, float green, float blue, float alpha);
-    void setDiffuse(float red, float green, float blue, float alpha);
-    void setSpecular(float red, float green, float blue, float alpha);
-    void setShininess(float frontShininess);
-    void setMaterial();
+    void setAmbient	(float red,	float green,	float blue,	float alpha);
+    void setDiffuse	(float red,	float green,	float blue,	float alpha);
+    void setSpecular	(float red,	float green,	float blue,	float alpha);
+    void setShininess	(float frontShininess);
+    void setMaterial	();
 
 private:
     float frontAmbient[4];
