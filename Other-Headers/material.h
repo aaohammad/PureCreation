@@ -23,6 +23,7 @@ private:
     float backDiffuse[4];
     float backSpecular[4];
     float backShininess;
+    int x;
 };
 
 #endif // MATERIAL_H
